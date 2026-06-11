@@ -13,7 +13,11 @@
         "name": "Sebastian Kauffmann"
       },
       "category": "productivity",
-      "keywords": ["readme", "dokumentation", "beispiel"]
+      "keywords": [
+        "readme",
+        "dokumentation",
+        "beispiel"
+      ]
     },
     {
       "name": "skill-teilen",
@@ -23,7 +27,20 @@
         "name": "Sebastian Kauffmann"
       },
       "category": "community",
-      "keywords": ["teilen", "einreichen", "contribution", "library"]
+      "keywords": [
+        "teilen",
+        "einreichen",
+        "contribution",
+        "library"
+      ]
+    },
+    {
+      "name": "test-dummy",
+      "source": "./plugins/test-dummy",
+      "description": "Temporärer Test-Skill zur Verifikation des PR-Flows",
+      "author": {
+        "name": "Sebastian Kauffmann"
+      }
     }
   ]
 }
