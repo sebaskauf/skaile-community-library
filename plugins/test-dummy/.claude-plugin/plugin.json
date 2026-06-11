@@ -1,0 +1,7 @@
+{
+  "name": "test-dummy",
+  "description": "Temporärer Test-Skill zur Verifikation des PR-Flows. Wird nicht gemergt.",
+  "author": {
+    "name": "Sebastian Kauffmann"
+  }
+}
