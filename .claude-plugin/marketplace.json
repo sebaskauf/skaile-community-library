@@ -14,6 +14,16 @@
       },
       "category": "productivity",
       "keywords": ["readme", "dokumentation", "beispiel"]
+    },
+    {
+      "name": "skill-teilen",
+      "source": "./plugins/skill-teilen",
+      "description": "Teilt deinen Skill automatisch mit der Community: Claude übernimmt Fork, Einreichung und Pull Request für dich",
+      "author": {
+        "name": "Sebastian Kauffmann"
+      },
+      "category": "community",
+      "keywords": ["teilen", "einreichen", "contribution", "library"]
     }
   ]
 }

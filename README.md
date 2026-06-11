@@ -24,14 +24,20 @@ Einzelnen Skill direkt installieren:
 | Skill | Beschreibung | Autor | Installieren |
 | :---- | :----------- | :---- | :----------- |
 | [`readme-pro`](./plugins/readme-pro) | Schreibt ein sauberes, professionelles README für dein aktuelles Projekt | Sebastian Kauffmann | `/plugin install readme-pro@skaile-community` |
+| [`skill-teilen`](./plugins/skill-teilen) | Teilt deinen Skill automatisch mit der Community: Claude übernimmt Fork, Einreichung und Pull Request für dich | Sebastian Kauffmann | `/plugin install skill-teilen@skaile-community` |
 <!-- PLUGINS:END -->
 
 ## Eigenen Skill einreichen
 
-Du hast einen Skill gebaut, der anderen helfen könnte? Stark! Zwei Wege:
+Du hast einen Skill gebaut, der anderen helfen könnte? Stark! Der einfachste Weg: **Lass Claude das machen.**
 
-1. **Mit GitHub-Account:** Anleitung in [CONTRIBUTING.md](CONTRIBUTING.md). Du kopierst im Prinzip nur den Beispiel-Skill `plugins/readme-pro/` und packst deinen Inhalt rein.
-2. **Ohne GitHub-Account:** Schick deinen Skill als ZIP per DM an Sebastian (Skool), er nimmt ihn für dich auf.
+```
+/plugin install skill-teilen@skaile-community
+```
+
+Danach sagst du Claude Code einfach "Teile meinen Skill [Name] mit der SKAILE Community" und Claude übernimmt Fork, Struktur, Validierung und Pull Request komplett für dich.
+
+Ohne GitHub-Account oder lieber manuell? Beide Wege stehen in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Jede Einreichung wird automatisch technisch geprüft und vor der Freischaltung von Sebastian gereviewt.
 

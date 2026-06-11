@@ -1,0 +1,7 @@
+{
+  "name": "skill-teilen",
+  "description": "Teilt deinen Skill oder dein Plugin automatisch mit der SKAILE Community Skill-Library. Claude übernimmt Fork, Einreichung und Pull Request für dich.",
+  "author": {
+    "name": "Sebastian Kauffmann"
+  }
+}
