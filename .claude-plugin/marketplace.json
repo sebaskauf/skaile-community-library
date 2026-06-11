@@ -33,14 +33,6 @@
         "contribution",
         "library"
       ]
-    },
-    {
-      "name": "test-dummy",
-      "source": "./plugins/test-dummy",
-      "description": "Temporärer Test-Skill zur Verifikation des PR-Flows",
-      "author": {
-        "name": "Sebastian Kauffmann"
-      }
     }
   ]
 }
