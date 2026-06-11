@@ -1,11 +1,15 @@
 # Prüft jeden PR automatisch: Struktur, Manifeste, verdächtige Muster.
 # Läuft bewusst auf `pull_request` (read-only Token, keine Secrets) — sicher für Fork-PRs.
+# Zusätzlich täglicher Security-Scan der gesamten Library (cron) — bei Fund wird ein Issue erstellt.
 name: Validate
 
 on:
   pull_request:
   push:
     branches: [main]
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -35,3 +39,24 @@ jobs:
             echo "$BLOCKED"
             exit 1
           fi
+
+  # Täglicher Scan fehlgeschlagen → Issue für den Maintainer aufmachen
+  report-scan-failure:
+    needs: validate
+    if: ${{ failure() && github.event_name == 'schedule' }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Issue erstellen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "🚨 Täglicher Security-Scan fehlgeschlagen ($(date +%Y-%m-%d))" \
+            --body "Der tägliche Scan der Skill-Library hat ein Problem gefunden oder konnte nicht durchlaufen.
+
+          Bitte prüfen: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+
+          Bis zur Klärung im Zweifel den betroffenen Skill aus der marketplace.json nehmen."
