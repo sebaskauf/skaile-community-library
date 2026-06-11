@@ -8,9 +8,8 @@ Du reichst einen Skill des Users in die SKAILE Community Skill-Library ein (Repo
 
 ## Schritt 0: Voraussetzungen prüfen
 
-1. `gh --version` — wenn die GitHub CLI fehlt: biete an, sie zu installieren (macOS: `brew install gh`, Windows: `winget install GitHub.cli`).
-2. `gh auth status` — wenn nicht eingeloggt: erkläre dem User, dass er einen kostenlosen GitHub-Account braucht (github.com/signup) und führe ihn durch `gh auth login` (Browser-Login wählen). Das ist einmalig.
-3. Wenn der User keinen GitHub-Account will: Fallback anbieten — Skill-Ordner als ZIP packen, der User schickt ihn per Skool-DM an Sebastian. Dann hier stoppen.
+1. `gh --version` — wenn die GitHub CLI fehlt: installiere sie für den User (macOS: `brew install gh`, Windows: `winget install --id GitHub.cli`, danach Terminal-Neustart nötig).
+2. `gh auth status` — wenn nicht eingeloggt: prüfe, ob der User schon einen GitHub-Account hat. Falls nein: schicke ihn auf https://github.com/signup (kostenlos, 2 Minuten) und warte, bis er fertig ist. Dann führe ihn durch `gh auth login`: GitHub.com → HTTPS → "Login with a web browser", Code im Browser eingeben. Das ist alles einmalig, danach läuft jede künftige Einreichung ohne Setup.
 
 ## Schritt 1: Klären, was geteilt wird
 

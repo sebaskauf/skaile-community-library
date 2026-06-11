@@ -1,6 +1,6 @@
 # Eigenen Skill einreichen
 
-Danke, dass du was beisteuern willst! Es gibt drei Wege, vom einfachsten zum manuellsten.
+Danke, dass du was beisteuern willst! Der Standard-Weg ist Weg 1. Wenn du noch keinen GitHub-Account hast, mach vorher einmal Weg 2 (dauert 5 Minuten).
 
 ## Weg 1: Lass Claude das machen (empfohlen) 🤖
 
@@ -15,15 +15,41 @@ Du musst nichts von Forks oder Pull Requests verstehen. Claude erledigt das für
 
 Claude prüft die Voraussetzungen, verpackt deinen Skill in die richtige Struktur, validiert alles und reicht den Pull Request ein. Du bekommst am Ende den Link.
 
-**Einzige Voraussetzung**: ein kostenloser GitHub-Account und die GitHub CLI (`gh auth login`, einmalig). Auch dabei hilft dir Claude, frag ihn einfach.
-
 Alternativ ohne installierten Skill, mit diesem Prompt:
 
 > Lies https://github.com/sebaskauf/skaile-community-skills/blob/main/CONTRIBUTING.md und reiche meinen Skill [Name/Pfad] nach dieser Anleitung als Pull Request ein.
 
-## Weg 2: Ohne GitHub-Account
+## Weg 2: Noch keinen GitHub-Account? In 5 Minuten eingerichtet
 
-Pack deinen Skill-Ordner als ZIP und schick ihn Sebastian per DM in Skool. Er nimmt ihn für dich auf, dein Name kommt trotzdem als Autor rein.
+GitHub ist kostenlos und du brauchst es nur einmal einzurichten. Der schnellste Weg: Sag Claude Code einfach
+
+> Richte GitHub für mich ein und verbinde meinen Account.
+
+und er führt dich durch alles. Oder manuell in 3 Schritten:
+
+**Schritt 1: Account erstellen** (alle Systeme)
+Geh auf https://github.com/signup und registriere dich mit E-Mail, Passwort und einem Usernamen. Fertig in 2 Minuten.
+
+**Schritt 2: GitHub CLI installieren**
+
+- **Mac**: Terminal öffnen und eingeben:
+  ```
+  brew install gh
+  ```
+  (Falls `brew` nicht gefunden wird: sag Claude "installier mir Homebrew", dann nochmal.)
+- **Windows**: Terminal bzw. Eingabeaufforderung öffnen und eingeben:
+  ```
+  winget install --id GitHub.cli
+  ```
+  Danach das Terminal einmal schließen und neu öffnen.
+
+**Schritt 3: Mit deinem Account verbinden** (alle Systeme)
+
+```
+gh auth login
+```
+
+Dann einfach durchklicken: `GitHub.com` → `HTTPS` → `Login with a web browser`. Es öffnet sich dein Browser, du gibst den angezeigten Code ein, fertig. Ab jetzt kann Claude in deinem Namen Skills einreichen.
 
 ## Weg 3: Manuell (für alle, die es selbst machen wollen)
 

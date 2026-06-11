@@ -37,7 +37,7 @@ Du hast einen Skill gebaut, der anderen helfen könnte? Stark! Der einfachste We
 
 Danach sagst du Claude Code einfach "Teile meinen Skill [Name] mit der SKAILE Community" und Claude übernimmt Fork, Struktur, Validierung und Pull Request komplett für dich.
 
-Ohne GitHub-Account oder lieber manuell? Beide Wege stehen in [CONTRIBUTING.md](CONTRIBUTING.md).
+Noch keinen GitHub-Account? In 5 Minuten eingerichtet, Anleitung (Mac + Windows) und der manuelle Weg stehen in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Jede Einreichung wird automatisch technisch geprüft und vor der Freischaltung von Sebastian gereviewt.
 
