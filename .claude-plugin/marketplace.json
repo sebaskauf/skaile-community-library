@@ -1,0 +1,19 @@
+{
+  "name": "skaile-community",
+  "owner": {
+    "name": "Sebastian Kauffmann"
+  },
+  "description": "Community Skill-Library der SKAILE Academy. Skills und Plugins von Membern, für Member.",
+  "plugins": [
+    {
+      "name": "readme-pro",
+      "source": "./plugins/readme-pro",
+      "description": "Schreibt ein sauberes, professionelles README für dein aktuelles Projekt",
+      "author": {
+        "name": "Sebastian Kauffmann"
+      },
+      "category": "productivity",
+      "keywords": ["readme", "dokumentation", "beispiel"]
+    }
+  ]
+}

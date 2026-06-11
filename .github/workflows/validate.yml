@@ -1,0 +1,37 @@
+# Prüft jeden PR automatisch: Struktur, Manifeste, verdächtige Muster.
+# Läuft bewusst auf `pull_request` (read-only Token, keine Secrets) — sicher für Fork-PRs.
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Struktur und Manifeste validieren
+        run: node scripts/validate-structure.mjs .
+
+      - name: PR darf Infrastruktur nicht ändern
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git fetch --no-tags --depth=50 origin "$BASE_SHA" "$HEAD_SHA"
+          CHANGED=$(git diff --name-only "$BASE_SHA" "$HEAD_SHA")
+          echo "Geänderte Dateien:"
+          echo "$CHANGED"
+          BLOCKED=$(echo "$CHANGED" | grep -E '^(\.github/|scripts/)' || true)
+          if [ -n "$BLOCKED" ]; then
+            echo "::error::Dieser PR ändert geschützte Infrastruktur-Dateien. Skill-PRs dürfen .github/ und scripts/ nicht anfassen:"
+            echo "$BLOCKED"
+            exit 1
+          fi
