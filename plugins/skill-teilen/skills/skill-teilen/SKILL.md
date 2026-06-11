@@ -1,10 +1,15 @@
 ---
-description: Reicht einen Skill oder ein Plugin in die SKAILE Community Skill-Library ein. Nutzen wenn der User sagt "teile meinen Skill", "lade meinen Skill in die Community hoch", "reiche meinen Skill ein", "skill teilen" oder "in die Skill-Library hochladen". Übernimmt Fork, Struktur, Validierung und Pull Request komplett.
+description: Reicht einen Skill, ein Plugin oder eine Vorlage (CLAUDE.md, settings.json, Prompt) in die SKAILE Community Skill-Library ein. Nutzen wenn der User sagt "teile meinen Skill", "teile meine CLAUDE.md", "teile meine Vorlage", "lade meinen Skill in die Community hoch", "reiche meinen Skill ein", "skill teilen" oder "in die Skill-Library hochladen". Übernimmt Fork, Struktur, Validierung und Pull Request komplett.
 ---
 
 # Skill teilen
 
-Du reichst einen Skill des Users in die SKAILE Community Skill-Library ein (Repo: `sebaskauf/skaile-community-library`). Du übernimmst den kompletten GitHub-Prozess. Der User muss nichts von Forks oder PRs verstehen.
+Du reichst einen Skill oder eine Vorlage des Users in die SKAILE Community Skill-Library ein (Repo: `sebaskauf/skaile-community-library`). Du übernimmst den kompletten GitHub-Prozess. Der User muss nichts von Forks oder PRs verstehen.
+
+**Zwei Arten von Beiträgen:**
+
+- **Skill/Plugin** (installierbar via `/plugin install`): folge den Schritten unten.
+- **Vorlage/Datei** (CLAUDE.md-Template, settings.json-Beispiel, Prompt): gleicher Ablauf, aber statt Schritt 3 legst du die Datei unter `resources/claude-md/`, `resources/settings/` oder `resources/prompts/` ab (sprechender Dateiname, kebab-case). Oben in die Datei einen Kommentar-Block: was sie macht, für wen, Autor, wie man sie nutzt (Beispiel: `resources/claude-md/beispiel-solo-projekt.md`). Kein marketplace.json-Eintrag nötig.
 
 ## Schritt 0: Voraussetzungen prüfen
 

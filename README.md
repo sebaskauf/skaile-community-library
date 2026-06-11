@@ -27,6 +27,10 @@ Einzelnen Skill direkt installieren:
 | [`skill-teilen`](./plugins/skill-teilen) | Teilt deinen Skill automatisch mit der Community: Claude übernimmt Fork, Einreichung und Pull Request für dich | Sebastian Kauffmann | `/plugin install skill-teilen@skaile-community-library` |
 <!-- PLUGINS:END -->
 
+## Vorlagen und Templates
+
+Neben installierbaren Skills gibt es den [`resources/`](resources/)-Ordner mit CLAUDE.md-Vorlagen, settings.json-Beispielen und wiederverwendbaren Prompts zum Kopieren.
+
 ## Eigenen Skill einreichen
 
 Du hast einen Skill gebaut, der anderen helfen könnte? Stark! Der einfachste Weg: **Lass Claude das machen.**
