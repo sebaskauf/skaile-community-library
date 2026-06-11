@@ -25,6 +25,7 @@ Einzelnen Skill direkt installieren:
 | :---- | :----------- | :---- | :----------- |
 | [`readme-pro`](./plugins/readme-pro) | Schreibt ein sauberes, professionelles README für dein aktuelles Projekt | Sebastian Kauffmann | `/plugin install readme-pro@skaile-community` |
 | [`skill-teilen`](./plugins/skill-teilen) | Teilt deinen Skill automatisch mit der Community: Claude übernimmt Fork, Einreichung und Pull Request für dich | Sebastian Kauffmann | `/plugin install skill-teilen@skaile-community` |
+| [`test-dummy`](./plugins/test-dummy) | Temporärer Test-Skill zur Verifikation des PR-Flows | Sebastian Kauffmann | `/plugin install test-dummy@skaile-community` |
 <!-- PLUGINS:END -->
 
 ## Eigenen Skill einreichen
