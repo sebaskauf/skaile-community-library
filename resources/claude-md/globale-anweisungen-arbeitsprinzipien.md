@@ -75,7 +75,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 **Modell-Wahl:**
 - Nutze Sonnet für schnelle, einfache Aufgaben.
-- Nutze Opus 4.6 für komplexe Architektur-Entscheidungen und anspruchsvolle Tasks.
+- Nutze Opus 4.8 für komplexe Architektur-Entscheidungen und anspruchsvolle Tasks.
 
 ---
 ## Skills & Workflows
