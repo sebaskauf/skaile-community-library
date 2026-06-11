@@ -4,7 +4,7 @@ description: Reicht einen Skill oder ein Plugin in die SKAILE Community Skill-Li
 
 # Skill teilen
 
-Du reichst einen Skill des Users in die SKAILE Community Skill-Library ein (Repo: `sebaskauf/skaile-community-skills`). Du übernimmst den kompletten GitHub-Prozess. Der User muss nichts von Forks oder PRs verstehen.
+Du reichst einen Skill des Users in die SKAILE Community Skill-Library ein (Repo: `sebaskauf/skaile-community-library`). Du übernimmst den kompletten GitHub-Prozess. Der User muss nichts von Forks oder PRs verstehen.
 
 ## Schritt 0: Voraussetzungen prüfen
 
@@ -23,7 +23,7 @@ Finde heraus (nachfragen falls unklar):
 ## Schritt 2: Fork und Clone
 
 ```bash
-gh repo fork sebaskauf/skaile-community-skills --clone
+gh repo fork sebaskauf/skaile-community-library --clone
 ```
 
 In ein temporäres oder Projekt-Verzeichnis. Existiert der Fork schon, clone ihn und bringe main auf den neuesten Stand (`git fetch upstream && git merge upstream/main`, upstream ggf. hinzufügen).
@@ -49,7 +49,7 @@ Muss grün sein. Fehler erst beheben, dann weiter.
 ```bash
 git add -A && git commit -m "feat: add <skill-name> skill"
 git push -u origin add-<skill-name>
-gh pr create --repo sebaskauf/skaile-community-skills --title "Neuer Skill: <skill-name>" --body "<ausgefülltes Template>"
+gh pr create --repo sebaskauf/skaile-community-library --title "Neuer Skill: <skill-name>" --body "<ausgefülltes Template>"
 ```
 
 Fülle im PR-Body das Template aus `.github/PULL_REQUEST_TEMPLATE.md` ehrlich aus (nur abhaken, was wirklich zutrifft).

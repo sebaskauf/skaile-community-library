@@ -7,15 +7,15 @@ Skills und Plugins für Claude Code, von Community-Membern für Community-Member
 Öffne Claude Code und gib ein:
 
 ```
-/plugin marketplace add sebaskauf/skaile-community-skills
+/plugin marketplace add sebaskauf/skaile-community-library
 ```
 
-Danach `/plugin` tippen, die Library `skaile-community` auswählen und installieren, was du brauchst. Updates bekommst du automatisch.
+Danach `/plugin` tippen, die Library `skaile-community-library` auswählen und installieren, was du brauchst. Updates bekommst du automatisch.
 
 Einzelnen Skill direkt installieren:
 
 ```
-/plugin install readme-pro@skaile-community
+/plugin install readme-pro@skaile-community-library
 ```
 
 ## Verfügbare Skills
@@ -23,8 +23,8 @@ Einzelnen Skill direkt installieren:
 <!-- PLUGINS:START — wird automatisch generiert, nicht von Hand bearbeiten -->
 | Skill | Beschreibung | Autor | Installieren |
 | :---- | :----------- | :---- | :----------- |
-| [`readme-pro`](./plugins/readme-pro) | Schreibt ein sauberes, professionelles README für dein aktuelles Projekt | Sebastian Kauffmann | `/plugin install readme-pro@skaile-community` |
-| [`skill-teilen`](./plugins/skill-teilen) | Teilt deinen Skill automatisch mit der Community: Claude übernimmt Fork, Einreichung und Pull Request für dich | Sebastian Kauffmann | `/plugin install skill-teilen@skaile-community` |
+| [`readme-pro`](./plugins/readme-pro) | Schreibt ein sauberes, professionelles README für dein aktuelles Projekt | Sebastian Kauffmann | `/plugin install readme-pro@skaile-community-library` |
+| [`skill-teilen`](./plugins/skill-teilen) | Teilt deinen Skill automatisch mit der Community: Claude übernimmt Fork, Einreichung und Pull Request für dich | Sebastian Kauffmann | `/plugin install skill-teilen@skaile-community-library` |
 <!-- PLUGINS:END -->
 
 ## Eigenen Skill einreichen
@@ -32,7 +32,7 @@ Einzelnen Skill direkt installieren:
 Du hast einen Skill gebaut, der anderen helfen könnte? Stark! Der einfachste Weg: **Lass Claude das machen.**
 
 ```
-/plugin install skill-teilen@skaile-community
+/plugin install skill-teilen@skaile-community-library
 ```
 
 Danach sagst du Claude Code einfach "Teile meinen Skill [Name] mit der SKAILE Community" und Claude übernimmt Fork, Struktur, Validierung und Pull Request komplett für dich.

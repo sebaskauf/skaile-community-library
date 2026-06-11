@@ -8,7 +8,7 @@ Du musst nichts von Forks oder Pull Requests verstehen. Claude erledigt das für
 
 1. Installiere den Skill `skill-teilen` aus dieser Library (einmalig):
    ```
-   /plugin install skill-teilen@skaile-community
+   /plugin install skill-teilen@skaile-community-library
    ```
 2. Sag Claude Code einfach:
    > Teile meinen Skill [Name/Pfad] mit der SKAILE Community.
@@ -17,7 +17,7 @@ Claude prüft die Voraussetzungen, verpackt deinen Skill in die richtige Struktu
 
 Alternativ ohne installierten Skill, mit diesem Prompt:
 
-> Lies https://github.com/sebaskauf/skaile-community-skills/blob/main/CONTRIBUTING.md und reiche meinen Skill [Name/Pfad] nach dieser Anleitung als Pull Request ein.
+> Lies https://github.com/sebaskauf/skaile-community-library/blob/main/CONTRIBUTING.md und reiche meinen Skill [Name/Pfad] nach dieser Anleitung als Pull Request ein.
 
 ## Weg 2: Noch keinen GitHub-Account? In 5 Minuten eingerichtet
 
@@ -71,7 +71,7 @@ claude plugin validate ./plugins/mein-skill
 
 # Komplett durchtesten:
 claude plugin marketplace add ./pfad/zu/deinem/fork
-claude plugin install mein-skill@skaile-community
+claude plugin install mein-skill@skaile-community-library
 ```
 
 ## Regeln (gelten für alle Wege)
