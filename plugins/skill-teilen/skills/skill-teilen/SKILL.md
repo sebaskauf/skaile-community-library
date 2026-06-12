@@ -66,6 +66,8 @@ Gib dem User den PR-Link und sag ihm:
 1. Sebastian reviewt und schaltet frei, danach wird der Skill automatisch an alle Member verteilt.
 2. Mach einen Post in der Skool-Kategorie "Show & Share", damit die Community deinen Skill kennenlernt.
 
+Biete direkt an, den Show-&-Share-Post jetzt zu schreiben: Wenn der Skill `show-and-share` installiert ist, nutze ihn dafür. Falls nicht, schlage vor, ihn zu installieren (`/plugin install show-and-share@skaile-community-library`), oder schreibe den Post nach dessen Format (🛠️ Mein Skill: [name] / Was macht er / So nutzt du ihn / Installieren-Befehl / Feedback 👇, max ~120 Wörter).
+
 ## Harte Regeln
 
 - Keine Secrets, API-Keys oder persönliche Daten in den eingereichten Dateien.

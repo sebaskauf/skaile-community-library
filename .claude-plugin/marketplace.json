@@ -33,6 +33,21 @@
         "contribution",
         "library"
       ]
+    },
+    {
+      "name": "show-and-share",
+      "source": "./plugins/show-and-share",
+      "description": "Schreibt dir einen fertigen Show-&-Share-Post für die Community, wenn du einen Skill oder eine Vorlage gebaut hast",
+      "author": {
+        "name": "Sebastian Kauffmann"
+      },
+      "category": "community",
+      "keywords": [
+        "post",
+        "show-and-share",
+        "vorstellen",
+        "community"
+      ]
     }
   ]
 }

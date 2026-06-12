@@ -24,6 +24,7 @@ Einzelnen Skill direkt installieren:
 | Skill | Beschreibung | Autor | Installieren |
 | :---- | :----------- | :---- | :----------- |
 | [`readme-pro`](./plugins/readme-pro) | Schreibt ein sauberes, professionelles README für dein aktuelles Projekt | Sebastian Kauffmann | `/plugin install readme-pro@skaile-community-library` |
+| [`show-and-share`](./plugins/show-and-share) | Schreibt dir einen fertigen Show-&-Share-Post für die Community, wenn du einen Skill oder eine Vorlage gebaut hast | Sebastian Kauffmann | `/plugin install show-and-share@skaile-community-library` |
 | [`skill-teilen`](./plugins/skill-teilen) | Teilt deinen Skill automatisch mit der Community: Claude übernimmt Fork, Einreichung und Pull Request für dich | Sebastian Kauffmann | `/plugin install skill-teilen@skaile-community-library` |
 <!-- PLUGINS:END -->
 
