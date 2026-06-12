@@ -76,6 +76,7 @@ claude plugin install mein-skill@skaile-community-library
 
 ## Regeln (gelten für alle Wege)
 
+- **Erst schauen, dann bauen:** Prüfe vor dem Einreichen, ob es schon einen ähnlichen Skill gibt (README-Tabelle). Verbesserungen an bestehenden Skills sind ausdrücklich willkommen und schlagen Beinahe-Duplikate. Werden doch zwei ähnliche Skills eingereicht, entscheidet das Review: Der stärkere wird gemergt oder beide werden zusammengelegt.
 - **Ein PR = ein Skill.** Macht das Review schneller.
 - **Beschreibung auf Deutsch**, Tech-Begriffe auf Englisch lassen.
 - **Keine Secrets**: keine API-Keys, Tokens oder persönliche Daten im Code.
