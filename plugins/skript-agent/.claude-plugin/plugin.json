@@ -1,0 +1,7 @@
+{
+  "name": "skript-agent",
+  "description": "Schreibt Short-Form-Skripte und Social-Posts in deiner Stimme, auf Basis echter Creator-Daten aus deiner Nische. Sucht sich auf Wunsch selbst Themen.",
+  "author": {
+    "name": "Sebastian Kauffmann"
+  }
+}
