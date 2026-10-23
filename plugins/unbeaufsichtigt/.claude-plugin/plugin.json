@@ -1,0 +1,7 @@
+{
+  "name": "unbeaufsichtigt",
+  "description": "Bringt eine Aufgabe allein zu Ende, wenn du nicht am Platz bist: keine Rückfragen, jede Annahme in DECISIONS.md, höchstens drei Fix-Versuche, Arbeit im eigenen Worktree",
+  "author": {
+    "name": "nyko073006"
+  }
+}

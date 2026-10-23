@@ -64,6 +64,22 @@
         "reels",
         "social-media"
       ]
+    },
+    {
+      "name": "unbeaufsichtigt",
+      "source": "./plugins/unbeaufsichtigt",
+      "description": "Bringt eine Aufgabe allein zu Ende, wenn du nicht am Platz bist: keine Rückfragen, jede Annahme in DECISIONS.md, höchstens drei Fix-Versuche, Arbeit im eigenen Worktree",
+      "author": {
+        "name": "nyko073006"
+      },
+      "category": "productivity",
+      "keywords": [
+        "afk",
+        "unattended",
+        "autonom",
+        "worktree",
+        "entscheidungen"
+      ]
     }
   ]
 }
